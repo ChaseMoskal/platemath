@@ -49,4 +49,20 @@ function calculateWeights({goal, weightPairs = standardGymWeightPairs, barWeight
 	return {stack, achievement}
 }
 
-(window).calculateWeights = calculateWeights
+const goalInput=document.querySelector(".goal-input") 
+const resultElement=document.querySelector(".result")
+
+function changeHandler() {
+	console.log(goalInput.value)
+	const goal = goalInput.value
+	const result = calculateWeights({goal})
+	const stack = result.stack
+	const total = result.achievement
+	resultElement.innerHTML = `Stack: ${stack.join(", ")}<br/> Total: ${total}`
+}
+
+goalInput.onchange = function () { changeHandler() }
+goalInput.onkeyup = function() { changeHandler() }
+goalInput.onmouseup = function() { changeHandler() }
+
+
