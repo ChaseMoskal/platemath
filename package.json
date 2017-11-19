@@ -1,6 +1,6 @@
 {
 	"name": "platemath",
-	"version": "0.2.0",
+	"version": "0.0.0-dev",
 	"description": "math for your plates",
 	"main": "index.js",
 	"private": true,
@@ -11,18 +11,7 @@
 	"author": "Chase Moskal <chasemoskal@gmail.com>",
 	"license": "ISC",
 	"devDependencies": {
-		"browserify": "14.5.0",
-		"envify": "4.1.0",
-		"http-server": "0.10.0",
-		"npm-run-all": "4.1.1",
-		"rimraf": "2.6.2",
-		"typescript": "2.5.3",
-		"uglify-es": "3.1.5",
-		"uglifyify": "4.0.4"
+		"http-server": "0.10.0"
 	},
-	"dependencies": {
-		"mobx": "3.3.1",
-		"mobx-preact": "0.3.1",
-		"preact": "8.2.5"
-	}
+	"dependencies": {}
 }
